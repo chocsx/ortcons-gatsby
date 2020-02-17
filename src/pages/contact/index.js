@@ -85,7 +85,7 @@ const Contact = () => {
             <div className="separator">
               <h4 className="orange-color">Onde estamos</h4>
               <p className="white-color">
-                Rua Nossa Senhora do Rosário - 480 Sala 01 e 02 | Palhoça - SC
+                Rua Nossa Senhora do Rosário - 480 Sala 02 | Palhoça - SC
                 CEP 88138-800
               </p>
             </div>
