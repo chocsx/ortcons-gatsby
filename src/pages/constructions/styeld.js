@@ -168,6 +168,7 @@ export const Apartment = styled.div`
   cursor: pointer;
   transition: .3s;
   opacity: 0;
+  font-size: 0.8rem;
   min-width: 140px;
   &.show {
     opacity: 1;
