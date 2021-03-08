@@ -6,7 +6,7 @@ import {
   Content,
   Info,
   Apartment
-} from "../../pages/constructions/styeld"
+} from "../../styles-pages/constructions-styled"
 import { FlexList, Button } from "../../shared/styled-shared"
 
 export default ({
@@ -26,8 +26,6 @@ export default ({
   }
 
   function toApartment(apartmentId) {
-    console.log(apartmentId)
-    debugger;
     navigate('/constructions/apartment');
   }
 
@@ -227,7 +225,7 @@ export default ({
                     key={index}
                     onClick={() => toApartment(index)}
                     className={toggleDetails ? 'show' : ''}>
-                    {apartment.title} - {index}
+                    {apartment.title}
                   </Apartment>
                 )
               })}

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 
-import { SectionAbout, ImageBanner } from "./styled"
+import { SectionAbout, ImageBanner } from "../../styles-pages/about-styled"
 import { Flex, TitleAbout, Box } from "../../theme/styled"
 
 import banner from "../../assets/imgs/banner-about.jpg"

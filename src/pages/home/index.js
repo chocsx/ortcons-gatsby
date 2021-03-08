@@ -8,7 +8,7 @@ import {
   Box,
   SectionAbout,
   WrapperAboutText,
-} from "./styled";
+} from "../../styles-pages/home-styled";
 
 import {
   Container,
