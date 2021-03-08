@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
-import { SectionDevelopmtens } from "./styeld";
+import { SectionDevelopmtens } from "../../styles-pages/constructions-styled"
 import { Container, Title, FlexList } from "../../theme/styled";
 import DevelopmentBox from "../../components/development/DevelopmentBox";
 import img from "../../assets/developments/1/Fachada_Noturna.jpg";
@@ -51,6 +51,8 @@ const dataMock = {
     }
   ]
 }
+
+
 
 const Constructions = () => {
   return (

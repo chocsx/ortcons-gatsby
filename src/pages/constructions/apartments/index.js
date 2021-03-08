@@ -11,7 +11,7 @@ import {
   ApartmentBox,
   Wrapper,
   Grid
-} from "./styled";
+} from "../../../styles-pages/apartments-styled";
 
 const Apartments = () => {
   return (

@@ -12,7 +12,7 @@ import {
   MinImage,
   ListMin,
   SectionMap,
-} from "./styled"
+} from "../../../styles-pages/apartment-styled";
 
 const Apartment = () => {
   const data = useStaticQuery(graphql`
