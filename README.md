@@ -1,3 +1,6 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b530d8f7-7a21-4a85-ba6b-2c9ce3da9065/deploy-status)](https://app.netlify.com/sites/lucid-sinoussi-003089/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
