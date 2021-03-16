@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import { SectionDevelopmtens } from "../../styles-pages/constructions-styled"
 import { Container, Title, FlexList } from "../../theme/styled";
 import DevelopmentBox from "../../components/development/DevelopmentBox";
-import img from "../../assets/developments/1/Fachada_Noturna.jpg";
+import img from "../../assets/developments/temp/Fachada_Noturna.jpg";
 
 const dataMock = {
   title: 'Reserva do tabuleiro',

@@ -14,7 +14,9 @@ import {
   SectionMap,
 } from "../../../styles-pages/apartment-styled";
 
+
 const Apartment = () => {
+
   const data = useStaticQuery(graphql`
     query Image {
       images:allFile(filter:{
