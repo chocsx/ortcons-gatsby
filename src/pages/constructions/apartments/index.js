@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../../components/layout"
-import DevelopmentBox from "../../../components/development/DevelopmentBox"
+// import DevelopmentBox from "../../../components/development/DevelopmentBox"
 import {
   Title,
   FlexList,
@@ -8,7 +8,7 @@ import {
 } from "../../../theme/styled"
 import {
   ApartmentsSecion,
-  ApartmentBox,
+  // ApartmentBox,
   Wrapper,
   Grid
 } from "../../../styles-pages/apartments-styled";

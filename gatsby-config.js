@@ -2,7 +2,13 @@ const path = require("path")
 const siteMetadata = require("./src/config/metadata")
 
 module.exports = {
-  siteMetadata,
+  siteMetadata: {
+    title: `Mateus Sobrinho`,
+    position: `Fullstack Developer`,
+    description: `Ortcons Empreendimentos`,
+    author: `@chocsx`,
+    siteUrl: `https://msobrinho.com`
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     {
@@ -11,17 +17,6 @@ module.exports = {
         name: `development`,
         path: path.join(__dirname, `src`, `assets`),
       },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-          },
-          `gatsby-remark-lazy-load`,
-        ]
-      }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -56,6 +51,17 @@ module.exports = {
         color: `#f6a500`,
         showSpinner: true,
       },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          `gatsby-remark-lazy-load`,
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

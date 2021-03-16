@@ -18,10 +18,10 @@ import {
 const Apartment = () => {
 
   const data = useStaticQuery(graphql`
-    query Image {
+    query Image4 {
       images:allFile(filter:{
         relativeDirectory:{
-          eq: "developments/1"
+          eq: "developments/4"
         }
       }){
         nodes {
@@ -278,7 +278,7 @@ const Apartment = () => {
                   />
                 </svg>
 
-                <p>2 Dorm</p>
+                <p>1 Dorm</p>
               </div>
               <div className="item">
                 <svg
@@ -331,7 +331,7 @@ const Apartment = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p>74 m²</p>
+                <p>50,13 m²</p>
               </div>
             </FlexList>
           </Box>

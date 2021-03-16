@@ -18,7 +18,7 @@ import {
 const Apartment = () => {
 
   const data = useStaticQuery(graphql`
-    query Image {
+    query Image1 {
       images:allFile(filter:{
         relativeDirectory:{
           eq: "developments/1"
@@ -44,6 +44,7 @@ const Apartment = () => {
 
   useEffect(() => {
     async function getImgs() {
+      console.log(data)
       const imgs = await data.images.nodes.reduce((interator, item, index) => {
         if (item.childImageSharp) {
           interator.push({

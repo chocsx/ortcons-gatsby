@@ -18,10 +18,10 @@ import {
 const Apartment = () => {
 
   const data = useStaticQuery(graphql`
-    query Image {
+    query Image6 {
       images:allFile(filter:{
         relativeDirectory:{
-          eq: "developments/1"
+          eq: "developments/6"
         }
       }){
         nodes {
@@ -146,6 +146,7 @@ const Apartment = () => {
 
           <Box className={slideMode ? "content slideOn" : "content slideOff"}>
             <h1>RESERVA DO TABULEIRO</h1>
+            <h2>Unidade com 71,95m² (65,84m² de apto + 6,11m² de Sacada)</h2>
             <p>
               Você de frente para o melhor da vida! O Reserva do Tabuleiro é um
               empreendimento moderno e refinado, pensado para você que busca
@@ -331,7 +332,7 @@ const Apartment = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p>74 m²</p>
+                <p>71,95 m²</p>
               </div>
             </FlexList>
           </Box>

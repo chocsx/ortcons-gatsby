@@ -26,7 +26,8 @@ export default ({
   }
 
   function toApartment(apartmentId) {
-    navigate('/constructions/apartment');
+    console.log(apartmentId)
+    navigate(`/constructions/apartment/${apartmentId}`);
   }
 
   return (
@@ -223,7 +224,7 @@ export default ({
                 return (
                   <Apartment
                     key={index}
-                    onClick={() => toApartment(index)}
+                    onClick={() => toApartment(index + 1)}
                     className={toggleDetails ? 'show' : ''}>
                     {apartment.title}
                   </Apartment>
