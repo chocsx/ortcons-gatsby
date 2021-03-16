@@ -18,7 +18,7 @@ import {
 const Apartment = () => {
 
   const data = useStaticQuery(graphql`
-    query Image {
+    query Progress {
       images:allFile(filter:{
         relativeDirectory:{
           eq: "developments/1"

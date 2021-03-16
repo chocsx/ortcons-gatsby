@@ -18,7 +18,7 @@ import {
 const Apartment = () => {
 
   const data = useStaticQuery(graphql`
-    query Image3 {
+    query Apto3Construction {
       images:allFile(filter:{
         relativeDirectory:{
           eq: "developments/3"
