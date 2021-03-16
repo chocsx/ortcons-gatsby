@@ -22,10 +22,12 @@ const Map = () => {
     <InframeMap>
       <iframe
         title="map"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7067.55653527195!2d-48.70592664313137!3d-27.662331123393606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527352693cfae73%3A0xcc91bbba304b2c86!2sR.%20Luci%20Vilani%20-%20Alto%20Aririu%2C%20Palho%C3%A7a%20-%20SC%2C%2088132-772!5e0!3m2!1spt-BR!2sbr!4v1581393639903!5m2!1spt-BR!2sbr"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.468900696459!2d-48.69977757080404!3d-27.659320198925748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527351296989c3b%3A0x22a8b310802b79e9!2sResidencial%20Reserva%20do%20Tabuleiro!5e0!3m2!1sen!2sbr!4v1615914902758!5m2!1sen!2sbr"
       />
     </InframeMap>
   )
 }
 
 export default Map
+
+

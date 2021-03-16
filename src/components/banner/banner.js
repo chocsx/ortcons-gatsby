@@ -113,7 +113,7 @@ export default function Banner() {
               </div>
             </div>
             <div className="call-action">
-              <Link className="link" to="/developments">
+              <Link className="link" to="/constructions">
                 Conheça o Empreendimento
               </Link>
               <svg
