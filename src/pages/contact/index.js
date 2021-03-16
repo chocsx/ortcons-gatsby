@@ -94,7 +94,7 @@ const Contact = () => {
               <p className="white-color">
                 48. 3017.0700
                 <br />
-                contato@ortcons.com.br
+                contato@ortconsincorporadora.com.br
               </p>
             </div>
             <div className="separator">
@@ -106,7 +106,7 @@ const Contact = () => {
           <FormContact></FormContact>
         </Container>
         <Footer>
-          <p className="white-color">All Rights Reserved © ORTCONS 2019</p>
+          <p className="white-color">All Rights Reserved © ORTCONS 2021</p>
         </Footer>
       </SectionContact>
     </Layout>
