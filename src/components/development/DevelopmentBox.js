@@ -26,7 +26,6 @@ export default ({
   }
 
   function toApartment(apartmentId) {
-    console.log(apartmentId)
     navigate(`/constructions/apartment/${apartmentId}`);
   }
 
