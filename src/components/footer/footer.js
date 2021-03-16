@@ -162,7 +162,7 @@ export default function footer() {
           <Column />
           <Column>
             <div className="all-rights-reserved separator">
-              <p className="white-color">All Rights Reserved © ORTCONS 2019</p>
+              <p className="white-color">All Rights Reserved © ORTCONS 2021</p>
             </div>
           </Column>
           <Column>

@@ -1,10 +1,17 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
 `
+
+export const StyledLink = styled(Link)`
+  border: 1px solid red;
+  display: flex;
+  background-color: red;
+`;
 
 export const TitleAbout = styled.h1`
   color: #f6a500;
