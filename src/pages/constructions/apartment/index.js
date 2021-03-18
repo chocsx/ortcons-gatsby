@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Map from "../../../components/map/map"
 import FormHaveInterest from "../../../components/form-have-interest/FormHaveInterest"
 import Layout from "../../../components/layout"
-import { Grid, FlexList, Button } from "../../../theme/styled"
+import { Grid, FlexList, Button,Title } from "../../../theme/styled"
 import {
   SectionDevelopment,
   Box,
@@ -12,7 +12,11 @@ import {
   MinImage,
   ListMin,
   SectionMap,
+  SectionProgress
 } from "../../../styles-pages/apartment-styled";
+
+import { navigate } from "@reach/router"
+import Progress from "../../../components/progress"
 
 
 const Apartment = () => {
@@ -337,6 +341,39 @@ const Apartment = () => {
           </Box>
         </Grid>
       </SectionDevelopment>
+      <SectionProgress>
+      <Title>Progresso da Obra</Title>
+          <Progress label="Fundação" porcentage="100" />
+          <Progress label="Estrutura" porcentage="100" />
+          <Progress label="Instalações " porcentage="10" />
+          <Progress label="Acabamento Interno" porcentage="0" />
+          <Progress label="Acabamento Externo" porcentage="0" />
+          <Progress label="Infraestrutura " porcentage="0" />
+
+          <Button
+            onClick={() => navigate("/progress")}
+            className="btn btn-icon"
+            background="#F6A500"
+            color="#FFF"
+            width="300px"
+            fontSize=".85em"
+          >
+            Confira as Fotos
+            <svg
+              className="icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                fill="white"
+              />
+            </svg>
+          </Button>
+      </SectionProgress>
       <SectionMap>
         <Grid>
           <Map />

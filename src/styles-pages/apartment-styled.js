@@ -17,6 +17,17 @@ export const SectionDevelopment = styled.section`
   }
 `
 
+export const SectionProgress = styled.section`
+  min-height: 800px;
+  background: #f9f9f9;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+`
+
 export const Box = styled.div`
   position: relative;
   width: 100%;

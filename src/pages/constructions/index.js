@@ -1,12 +1,11 @@
 import React from "react"
-import { navigate } from "@reach/router"
+
 import Layout from "../../components/layout"
 import { SectionDevelopmtens } from "../../styles-pages/constructions-styled"
 import { Container, Title, FlexList, Button } from "../../theme/styled"
 import DevelopmentBox from "../../components/development/DevelopmentBox"
 import img from "../../assets/developments/temp/Fachada_Noturna.jpg"
 
-import Progress from "../../components/progress"
 
 const dataMock = {
   title: "Reserva do tabuleiro",
@@ -70,37 +69,6 @@ const Constructions = () => {
           <FlexList flow="column">
             <DevelopmentBox {...dataMock} />
           </FlexList>
-          <Title>Progresso da Obra</Title>
-          <Progress label="Fundação" porcentage="100" />
-          <Progress label="Estrutura" porcentage="100" />
-          <Progress label="Instalações " porcentage="10" />
-          <Progress label="Acabamento Interno" porcentage="0" />
-          <Progress label="Acabamento Externo" porcentage="0" />
-          <Progress label="Infraestrutura " porcentage="0" />
-
-          <Button
-            onClick={() => navigate("/progress")}
-            className="btn btn-icon"
-            background="#F6A500"
-            color="#FFF"
-            width="300px"
-            fontSize=".85em"
-          >
-            Confira as Fotos
-            <svg
-              className="icon"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
-                fill="white"
-              />
-            </svg>
-          </Button>
         </Container>
       </SectionDevelopmtens>
     </Layout>
