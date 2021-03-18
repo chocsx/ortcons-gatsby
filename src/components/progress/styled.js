@@ -1,7 +1,10 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 `
 export const Label = styled.span`
   color: #666;
