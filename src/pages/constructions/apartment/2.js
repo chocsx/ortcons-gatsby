@@ -29,8 +29,9 @@ const Apartment = () => {
             original {
               src
             }
-            fixed(width:600,height:600){
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 1024) {
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
@@ -49,7 +50,7 @@ const Apartment = () => {
           interator.push({
             id: index,
             img: item.childImageSharp.original,
-            min: item.childImageSharp.fixed,
+            min: item.childImageSharp.fluid,
           })
         }
         return interator
@@ -83,7 +84,7 @@ const Apartment = () => {
             ))}
           </ListMin>
           <WrapperImage className={slideMode ? "slideOn" : "slideOff"}>
-            <MaxImage src={imageActive.img.src}></MaxImage>
+            <MaxImage src={imageActive.min.src}></MaxImage>
             <Button
               className="btn-zoom btn-icon"
               onClick={() => toggleSlide()}

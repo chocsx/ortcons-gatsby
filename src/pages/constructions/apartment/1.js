@@ -12,25 +12,20 @@ import {
   MinImage,
   ListMin,
   SectionMap,
-} from "../../../styles-pages/apartment-styled";
-
+} from "../../../styles-pages/apartment-styled"
 
 const Apartment = () => {
-
   const data = useStaticQuery(graphql`
     query Apto1Construction {
-      images:allFile(filter:{
-        relativeDirectory:{
-          eq: "developments/1"
-        }
-      }){
+      images: allFile(filter: { relativeDirectory: { eq: "developments/1" } }) {
         nodes {
-          childImageSharp{
+          childImageSharp {
             original {
               src
             }
-            fixed(width:600,height:600){
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 1024) {
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
@@ -49,7 +44,7 @@ const Apartment = () => {
           interator.push({
             id: index,
             img: item.childImageSharp.original,
-            min: item.childImageSharp.fixed,
+            min: item.childImageSharp.fluid,
           })
         }
         return interator
@@ -60,8 +55,8 @@ const Apartment = () => {
     getImgs()
   }, [])
 
-  const handleClickImage = id => {
-    return setImageActive(arrayImages.find(item => item.id === id))
+  const handleClickImage = (id) => {
+    return setImageActive(arrayImages.find((item) => item.id === id))
   }
 
   const toggleSlide = () => {
@@ -73,7 +68,7 @@ const Apartment = () => {
       <SectionDevelopment>
         <Grid>
           <ListMin>
-            {arrayImages.map(item => (
+            {arrayImages.map((item) => (
               <MinImage
                 key={item.id}
                 className={imageActive.id === item.id ? "active" : ""}
@@ -83,7 +78,7 @@ const Apartment = () => {
             ))}
           </ListMin>
           <WrapperImage className={slideMode ? "slideOn" : "slideOff"}>
-            <MaxImage src={imageActive.img.src}></MaxImage>
+            <MaxImage src={imageActive.min.src}></MaxImage>
             <Button
               className="btn-zoom btn-icon"
               onClick={() => toggleSlide()}
@@ -344,7 +339,7 @@ const Apartment = () => {
         </Grid>
       </SectionMap>
     </Layout>
-  );
+  )
 }
 
-export default Apartment;
+export default Apartment
